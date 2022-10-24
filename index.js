@@ -7,3 +7,5 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Open server for listing port:3000
+app.listen(3000);
