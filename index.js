@@ -9,3 +9,8 @@ const __dirname = dirname(__filename);
 
 // Open server for listing port:3000
 app.listen(3000);
+
+// Sending get reques for index.html 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
